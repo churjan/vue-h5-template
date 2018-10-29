@@ -1,0 +1,14 @@
+@import "./_variables.scss";
+@import "./_mixin.scss";
+@import "./reset.scss"; //重置样式
+@import "./common.scss"; //公共样式
+
+body {
+  opacity: 0;
+  transition: opacity .3s;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  //参考：https://juejin.im/entry/5b3dd6f8f265da0fae4efd39?utm_source=gold_browser_extension
+  color: var(--textColor);
+  background-color: var(--bgColor);
+  font-size: var(--fontSize);
+}

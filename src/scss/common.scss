@@ -1,0 +1,56 @@
+// 公用的样式
+.cm-layer,.cm-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+    .move{
+      transform: translateY(0);
+    }
+    .scale{
+      transform: scale(1);
+    }
+  }
+  .move{
+    transform: translateY(-1rem);
+    transition: .3s;
+  }
+  .scale{
+    transform: scale(0);
+    transition: .3s;
+  }
+}
+
+.ani {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
