@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import vuexdemo from '@/pages/demo/vuexdemo'
 import index from '@/pages/index'
 import template from '@/pages/template'
 
@@ -9,6 +10,15 @@ Vue.use(Router)
 const router = new Router({
   // mode: 'history',
   routes: [
+    {
+      name:'vuexdemo',
+      path: '/demo/vuexdemo',
+      meta: {
+        title: "vuexdemo",
+        // requiresAuth: true
+      },
+      component:vuexdemo
+    },
     {
       name:'index',
       path: '/',

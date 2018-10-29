@@ -1,11 +1,14 @@
 <template>
-<div>template</div>
+ <div>
+  <div>打开box</div>
+  <div v-if="isShowBox">box盒子</div>
+ </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   mounted(){
-    console.log(this.$store.state.isShowModal)
 
   },
   data () {
@@ -13,8 +16,10 @@ export default {
 
     }
   },
-  methods:{
-
+  computed:{
+    ...mapState({
+      isShowBox: state => state.isShowBox
+    })
   }
 }
 </script>
